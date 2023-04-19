@@ -42,7 +42,7 @@ ll mod_add(ll a, ll b, ll m) { a = a % m; b = b % m; return (((a + b) % m) + m) 
 ll mod_mul(ll a, ll b, ll m) { a = a % m; b = b % m; return (((a * b) % m) + m) % m; }
 ll mod_sub(ll a, ll b, ll m) { a = a % m; b = b % m; return (((a - b) % m) + m) % m; }
 ll mod_div(ll a, ll b, ll m) { a = a % m; b = b % m; return (mod_mul(a, mminvprime(b, m), m) + m) % m; }  //only for prime m
-/* Write a C program to identify whether a given line is a comment or not.*/
+/* Write a C++ program to identify whether a given line is a comment or not.*/
 void go(){
     string st, s;
     while (getline(cin, st)){

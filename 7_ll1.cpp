@@ -32,7 +32,7 @@ void go(){
 
 
     function<void(string)> check = [&](string ip){
-        string st; 
+        string st;
         st.push_back('0');
         int ptr = 0; bool temp = false;
         int n = ip.size();
@@ -54,7 +54,7 @@ void go(){
                 st.push_back(mpp[{t, ip[ptr]}].second - '0');
                 ptr++;
                 continue;
-            }   
+            }
             if (mpp[{t, ip[ptr]}].first == 'r'){
                 cout << t << "            " << ip[ptr] << "        "<< "reduce" << " " << endl;
                 int pops = rpp[mpp[{t, ip[ptr]}].second].first;
@@ -80,8 +80,8 @@ void go(){
 
 int main(){
     #ifndef ONLINE_JUDGE
-        freopen("in.txt", "r", stdin);
-        freopen("out.txt", "w", stdout);
+        freopen("input.txt", "r", stdin);
+        freopen("output.txt", "w", stdout);
     #endif
     go();
     return 0;
