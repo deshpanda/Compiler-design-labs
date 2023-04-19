@@ -63,7 +63,7 @@ void go(){
                 if (st.empty()) break;
                 auto y = st.back() - '0';
                 st.push_back(g);
-                st.push_back(gp[{y, g}] - '0');
+                st.push_back(gpp[{y, g}] - '0');
             }
             cnt++;
             if (cnt > 15) break;
